@@ -1,0 +1,8 @@
+<%= simple_form_for :upcomint_event,url: upcoming_events_path do |f| %>
+  <%= f.input :title , label: 'Event' %>
+  <%= f.input :description %>
+  <%= f.input :event_date, as: :date %>
+  <%= f.input :start_time,as: :time%>
+  <%= f.input :end_time,as: :time %>
+  <%= f.button :submit ,class: 'btn btn-info' %>
+<% end %>
