@@ -1,4 +1,5 @@
-<center><h1 style="color: blue">UpcomingEvents</h1></center>
+<div style="background-color:  #e8f6f3 ">
+<center><h1 style="color: #008080">UpcomingEvents</h1></center>
 <div class="container">
 <% @upcoming.each do |event| %>
 <div class="row">
@@ -13,4 +14,5 @@
 </div>
 <% end %>
 <h3><%= link_to 'Add Event', new_upcoming_event_path %></h3>
+</div>
 </div>
