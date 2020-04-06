@@ -10,16 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_05_013208) do
+ActiveRecord::Schema.define(version: 2020_04_05_010113) do
 
   create_table "upcoming_events", force: :cascade do |t|
     t.string "title"
     t.text "description"
-    t.float "start_time"
-    t.float "end_time"
+    t.string "start_time"
+    t.string "end_time"
+    t.string "event_date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.date "event_date"
   end
 
 end

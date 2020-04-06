@@ -9,8 +9,9 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body style="background-color: #fff">
     <%= render partial: 'shared/navigation_bar' %>
     <%= yield %>
+    <%=  render partial: 'shared/footer' %>
   </body>
 </html>

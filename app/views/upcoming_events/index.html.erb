@@ -1,1 +1,16 @@
-<h1><%= link_to 'Add Event', new_upcoming_event_path %></h1>
+<center><h1 style="color: blue">UpcomingEvents</h1></center>
+<div class="container">
+<% @upcoming.each do |event| %>
+<div class="row">
+	<div class= "col" >
+		<ul>
+ <li> <h1><%= event.title %> </h1>
+  <%= event.start_time %>
+  <%= event.end_time %>
+  <%= event.event_date %></li>
+</ul>
+</div>
+</div>
+<% end %>
+<h3><%= link_to 'Add Event', new_upcoming_event_path %></h3>
+</div>
