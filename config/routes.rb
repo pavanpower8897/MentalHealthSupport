@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   get '/anger', to: 'mental_issue#anger'
   get '/eatingdistress', to: 'mental_issue#eatingdistress'
   get '/suicidalfeelings', to: 'mental_issue#suicidalfeelings'
-
-
+  
+  get '/appointment_form', to: 'appointment_form#new'
 
 end

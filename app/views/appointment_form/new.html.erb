@@ -1,0 +1,12 @@
+<center><h1 style="color: blue">AppointmentForm</h1></center>
+<div class="container">
+<%= simple_form_for :upcomint_event,url: upcoming_events_path do |f| %>
+  <%= f.input :Name %>
+  <%= f.input :PhoneNumber %>
+  <%= f.input :Doctor, as: :select %>
+  <%= f.input :AppointmenDate%>
+  <%= f.input :AvailableSlots %>
+  <%= f.button :submit ,class: 'btn btn-info' %>
+<% end %>
+<br><br>
+</div>
