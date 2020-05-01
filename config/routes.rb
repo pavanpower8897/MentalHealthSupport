@@ -13,4 +13,6 @@ Rails.application.routes.draw do
   
   get '/appointment_form', to: 'appointment_form#new'
 
+  get '/mentaltest', to: 'mental_issue#test'
+
 end

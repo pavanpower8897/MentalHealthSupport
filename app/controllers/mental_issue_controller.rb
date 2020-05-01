@@ -17,4 +17,7 @@ class MentalIssueController < ApplicationController
 	def suicidalfeelings
 	end
 
+	def test
+	end
+
 end

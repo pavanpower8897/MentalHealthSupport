@@ -62,9 +62,18 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'bootstrap', '~> 4.3.1'
+
+gem 'bootstrap-datetime-picker-for-rails', '~> 0.0.4'
+
+gem 'bootstrap-datepicker-rails'
+
 gem 'jquery-rails'
 
+gem 'jquery-ui-rails'
+
 gem 'simple_form'
+
+gem 'simple-form-datepicker', '~> 0.1.3'
 
 group :production do
   gem "pg"
@@ -73,3 +82,4 @@ end
 group :development, :test do
   gem "sqlite3"
 end
+

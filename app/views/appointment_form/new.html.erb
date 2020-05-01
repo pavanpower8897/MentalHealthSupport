@@ -4,8 +4,8 @@
 <%= simple_form_for :upcomint_event,url: upcoming_events_path do |f| %>
   <%= f.input :Name %>
   <%= f.input :PhoneNumber %>
-  <%= f.input :Doctor, as: :select %>
-  <%= f.input :AppointmenDate%>
+   <%= f.input :Doctor, collection: [ "Doctor1", "Doctor2", "Doctor3", "Doctor4"] ,:input_html => {"data-remote" => true, "data-url" => "/my_areas", "data-type" => :json} %>
+  <%= f.input :AppointmenDate ,input_html: { class: 'datepicker' } %>
   <%= f.input :AvailableSlots %>
   <%= f.button :submit ,class: 'btn btn-info' %>
 <% end %>

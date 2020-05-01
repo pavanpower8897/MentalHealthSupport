@@ -16,4 +16,12 @@
 //= require jquery3
 //= require popper
 //= require bootstrap-sprockets
+//= require bootstrap-datetimepicker/bootstrap-datetimepicker
+//= require bootstrap-datepicker
+//= require jquery-ui
+//= require jquery-ui/widgets/datepicker
 //= require_tree .
+
+$(document).ready(function(){
+    $('.datepicker').datepicker();
+  });
